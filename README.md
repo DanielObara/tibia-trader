@@ -7,14 +7,14 @@ A sophisticated market analysis tool for Tibia, now re-architected with Micro-Fr
 *   **Micro-Frontend Architecture**:
     *   **Host Application**: The main trading dashboard and market interface.
     *   **Remote Oracle**: An isolated, federated module for AI-driven advice ("Oracle Advisor").
-*   **Performance**: Built with **Rspack** and **Vite** for blazing fast HMR and builds.
+*   **Performance**: Built with **Vite** for blazing fast HMR and builds.
 *   **Cloud Orchestration**: Managed by **Zephyr Cloud** for dynamic version resolution and atomic deployments.
 *   **Environment Management**: Feature flags controlled via Zephyr Dashboard (Staging vs. Production).
 
 ## 🛠 Tech Stack
 
 *   **Framework**: React 18 + TypeScript
-*   **Build System**: Vite (Host) / Rspack (Remote)
+*   **Build System**: Vite (Host & Remote)
 *   **Styling**: TailwindCSS
 *   **State Management**: React Context + Hooks
 *   **Orchestration**: Zephyr Cloud (Module Federation)

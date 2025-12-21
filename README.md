@@ -26,7 +26,6 @@ tibia-trader/
 ├── src/                # Host Application (Dashboard, Market, Auth)
 ├── remotes/
 │   └── oracle-advisor/ # Remote Application (Federated Component)
-├── zephyr/             # Zephyr configuration artifacts
 └── vite.config.ts      # Federation configuration
 ```
 

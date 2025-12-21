@@ -22,3 +22,15 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Environment variables
+.env
+.env.*
+
+# Zephyr Reports
+ZEPHYR_JOURNEY_REPORT.md
+ZEPHYR_REPORT.md
+ZEPHYR_TUTORIAL.md
+"Zephyr Cloud_ Micro-Frontends na Prática.md"
+
+Zephyr Cloud*.md

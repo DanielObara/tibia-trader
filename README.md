@@ -1,20 +1,56 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Tibia Trader + Zephyr Cloud
 
-# Run and deploy your AI Studio app
+A sophisticated market analysis tool for Tibia, now re-architected with Micro-Frontends and deployed via Zephyr Cloud.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1pkmwom8_1uOmQ1aWGIh0yY3RRA3twrHt
+*   **Micro-Frontend Architecture**:
+    *   **Host Application**: The main trading dashboard and market interface.
+    *   **Remote Oracle**: An isolated, federated module for AI-driven advice ("Oracle Advisor").
+*   **Performance**: Built with **Rspack** and **Vite** for blazing fast HMR and builds.
+*   **Cloud Orchestration**: Managed by **Zephyr Cloud** for dynamic version resolution and atomic deployments.
+*   **Environment Management**: Feature flags controlled via Zephyr Dashboard (Staging vs. Production).
 
-## Run Locally
+## 🛠 Tech Stack
 
-**Prerequisites:**  Node.js
+*   **Framework**: React 18 + TypeScript
+*   **Build System**: Vite (Host) / Rspack (Remote)
+*   **Styling**: TailwindCSS
+*   **State Management**: React Context + Hooks
+*   **Orchestration**: Zephyr Cloud (Module Federation)
 
+## 📦 Project Structure
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+```bash
+tibia-trader/
+├── src/                # Host Application (Dashboard, Market, Auth)
+├── remotes/
+│   └── oracle-advisor/ # Remote Application (Federated Component)
+├── zephyr/             # Zephyr configuration artifacts
+└── vite.config.ts      # Federation configuration
+```
+
+## 🚦 Getting Started
+
+### Prerequisites
+*   Node.js 16+
+*   NPM or Yarn
+
+### Installation
+
+```bash
+# Install dependencies
+npm install
+
+# Start the development server
+npm run dev
+```
+
+## 🧪 Testing
+
+The project includes E2E tests to validate the federation integration.
+
+```bash
+# Run tests
+npm run test
+```

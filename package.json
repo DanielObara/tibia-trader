@@ -8,16 +8,24 @@
     "build": "vite build",
     "preview": "vite preview"
   },
+  "zephyr:dependencies": {
+    "oracle_advisor": "oracle-advisor.tibia-trader.danielobara@^0.0.0"
+  },
   "dependencies": {
     "@google/genai": "^1.30.0",
+    "clsx": "^2.1.1",
     "lucide-react": "^0.555.0",
     "react": "^19.2.1",
-    "react-dom": "^19.2.1"
+    "react-dom": "^19.2.1",
+    "recharts": "^3.6.0",
+    "tailwind-merge": "^3.4.0"
   },
   "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.4.1",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
     "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "vite": "^6.2.0",
+    "vite-plugin-zephyr": "^0.1.2"
   }
 }
